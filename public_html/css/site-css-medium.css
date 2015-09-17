@@ -31,14 +31,32 @@ nav{
 
 nav .nav-link{
     text-decoration: none;
+    display: flex;
+    justify-content: center;
+    vertical-align: middle;
+    min-height: 28px;
+    font-size: 20pt;
 }
 
 .title-bar{
     order: 1;
     width: 100%;
+    display: flex;
+    margin: 10px;
+}
+.title-bar .title{
+    order: 2;
 }
 .title-bar .title h2{
     text-align: center;
+}
+.logo{
+    background-image: url(../img/sloth.png);
+    background-size: 48px 48px;
+    min-width: 48px;
+    min-height: 48px;
+    background-repeat: no-repeat;
+    margin-right: 10px;
 }
 
 .post-container{
