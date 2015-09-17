@@ -1,0 +1,87 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 17/09/2015, 12:33:47 PM
+    Author     : stephen
+*/
+
+body{
+    width:100%;
+    display: flex;
+    flex-wrap: wrap;
+    font-family: Helvetica;
+}
+
+nav {
+    width: 290px;
+    height: 100%;
+    display: flex;
+    padding-left: 10px;
+    padding-top: 10px;
+    flex-wrap: wrap;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    transform: translate(-300px, 0px);
+    transition: 0.5s ease-in-out;
+    background: lightblue;
+}
+
+.nav-open{
+    transform: translate(0px, 0px);
+}
+
+.nav-link {
+    order: 2;
+    width: 100%;
+    font-size: 28pt;
+    text-decoration: none;
+    min-height: 20px;
+    min-width: 48px;
+    margin: 10px; 
+    color: black;
+}
+
+.hamburger-menu {
+    width: 48px;
+    order: 1;
+    background-image: url(../img/hamenu.png);
+    background-size: 100% 48px;
+    background-repeat: no-repeat;
+}
+
+.hamburger-menu:hover{
+    cursor: pointer;
+}
+
+.title-bar{
+    width: 100%;
+    order: 1;
+    display: flex;
+}
+
+.title{
+    width: 80%;
+    vertical-align: central;
+    order: 2;
+}
+
+.title h2{
+    text-align: center;
+}
+.post .title h2{
+    text-align: left;
+}
+
+.title-spacer{
+    width: 48px;
+    order: 3;
+}
+
+.post-container{
+    width: 100%;
+    order: 4;
+}

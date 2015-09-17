@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Site Title</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link type="text/css" href="css/site-css-small.css" rel="stylesheet" />
+        <script src="./js/libs/jquery/jquery.js"></script>
+    </head>
+    <body>
+        <nav>
+            <div class="hamburger-menu"></div>
+            <a class="nav-link" href="#">Link 1</a>
+            <a class="nav-link" href="#">Link 2</a>
+            <a class="nav-link" href="#">Link 3</a>
+            <a class="nav-link" href="#">Link 4</a>
+        </nav>
+        <div class="title-bar">
+            <div class="hamburger-menu"></div>
+            <div class="title"><h2>Site Title</h2></div>
+            <div class="title-spacer"></div>
+        </div>
+        <div class="post-container">
+            <div class="post">
+                <div class="title">
+                    <h2>Title 1</h2>
+                </div>
+                <div class="post-content">
+                    Lorem Ipsum sit amet
+                </div>
+            </div>
+            <div class="post">
+                <div class="title">
+                    <h2>Title 2</h2>
+                </div>
+                <div class="post-content">
+                    Lorem Ipsum sit amet
+                </div>
+            </div>
+            <div class="post">
+                <div class="title">
+                    <h2>Title 3</h2>
+                </div>
+                <div class="post-content">
+                    Lorem Ipsum sit amet
+                </div>
+            </div>
+        </div>
+        <script>
+            $(function () {
+                $(".hamburger-menu").click(function () {
+                    $("nav").toggleClass("nav-open")
+                });
+            });
+        </script>
+    </body>
+</html>
